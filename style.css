@@ -2,23 +2,27 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0f172a;
-  position: relative;
+  background-color: #0d2137;
 }
 
 .container {
   width: 22rem;
   margin-top: 8rem;
-  background-color: white;
+  background-color: #8da9c4;
   border-radius: 10px;
   padding: 30px;
+  box-shadow: 5px 5px 10px #051933, -5px -5px 10px #051933;
+}
+.container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .inputs {
@@ -27,25 +31,26 @@ body {
   margin: 15px 0;
 }
 .inputs input {
+  width: 100%;
   margin-top: 10px;
   outline: none;
   height: 30px;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
 }
 
 #resultado {
   font-size: 20px;
   text-align: center;
-  color: blue;
-  position: absolute;
-  top: 450px;
+  color: #0d2137;
 }
 
 #mensagem {
+  margin-top: 8px;
   font-size: 20px;
   text-align: center;
-  color: blue;
-  position: absolute;
-  top: 480px;
+  color: #0d2137;
 }
 
 .btn {
@@ -54,8 +59,19 @@ body {
   margin-top: 10px;
   border-radius: 5px;
   border-style: none;
-  background: #2563eb;
-  color: #fff;
+  background: #ff8e2b;
+  color: #0d2137;
+  font-weight: bold;
   cursor: pointer;
   font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #ff7802;
+  transition: 0.3s;
+}
+
+.resultado-box {
+  width: 100%;
+  margin-top: 20px;
 }
